@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>form demo</title>
+</head>
+
+<body>
+    <form name="demo">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="email">
+        <br>
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter email">
+        <button type="submit" onclick="checkINPUT()" class="btn btn-primary">Submit</button>
+    </form>
+    <script type="text/javascript">
+    var email = document.demo.email.value;
+
+    function checkINPUT() {
+        if (email == "") {
+
+            alert('email null');
+        }
+    }
+    </script>
+</body>
+
+</html>
+
